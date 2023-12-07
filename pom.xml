@@ -756,6 +756,6 @@
 			-->
 
 			<layout>default</layout>
-		</repository>
+		</repository> 
 	</distributionManagement>
 </project>
