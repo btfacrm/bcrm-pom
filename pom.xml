@@ -4,11 +4,11 @@
 
 	<groupId>078efef1-d139-48ed-92f5-f8d4a0592374</groupId>
 	<artifactId>common-pom</artifactId>
-	<version>1.0.0</version> 
+	<version>1.0.0</version>
 	<packaging>pom</packaging>
 
 	<!-- For documentation in Anypoint Exchange-->
-	<name>common-pom</name>
+	<name>common-pom</name> 
 	<description>Parent POM for Mulesoft applications</description>
 
 	<!--
