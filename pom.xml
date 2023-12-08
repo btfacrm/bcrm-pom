@@ -8,7 +8,7 @@
 	<packaging>pom</packaging>
 
 	<!-- For documentation in Anypoint Exchange-->
-	<name>common-pom</name> 
+	<name>common-pom</name>
 	<description>Parent POM for Mulesoft applications</description>
 
 	<!--
