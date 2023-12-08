@@ -11,7 +11,7 @@
 	<name>common-pom</name>
 	<description>Parent POM for Mulesoft applications</description>
 
-	<!-- 
+	<!--
 	******************************************************************************************
 	This POM file doesn't work with maven 3.9.X due to mule-maven-plugin
 	https://docs.mulesoft.com/release-notes/mule-maven-plugin/mule-maven-plugin-release-notes        
