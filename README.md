@@ -1,7 +1,7 @@
-# common-parent-pom
+# common-pom
 ![Powered by](https://img.shields.io/badge/Powered%20by-Mulesoft-535597.svg)
-  ![Build](https://github.com/btfacrm/common-parent-pom/actions/workflows/build.yml/badge.svg)
-  ![Build job](https://gist.githubusercontent.com/btfacrm/2f22ca2ddf1ba473d6e2cff61cc2fba9/raw/common-pom-wf.svg)
+  ![Build](https://github.com/btfacrm/common-pom/actions/workflows/build.yml/badge.svg)
+  ![Build job](https://gist.githubusercontent.com/jpontdia/2f22ca2ddf1ba473d6e2cff61cc2fba9/raw/common-pom-wf.svg)
 <br>
 
 Parent POM for Mulesoft applications
