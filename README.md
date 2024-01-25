@@ -171,9 +171,9 @@ Follow the next steps to install this asset in your organization.
 
 Example:
 ```xml
-    <groupId>078eefffa-d139-48ed-92f5-f8d4a0592374</groupId>
-    <artifactId>common-parent-pom</artifactId>
-    <version>1.0.1</version>
+    <groupId>176302a0-a94d-44e9-a517-9e6dc9548d0d</groupId>
+    <artifactId>common-pom</artifactId>
+    <version>1.0.9</version>
     <packaging>pom</packaging>
 ``` 
 **Update the distributionManagement section**
