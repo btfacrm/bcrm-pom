@@ -745,7 +745,11 @@
 			<!-- Commercial version: Cloudhub -->
 			<id>anypoint-exchange-v3</id>
 			<name>Assets for your anypoint organization</name>
+			<url>https://maven.gov.anypoint.mulesoft.com/api/v2/organizations/${project.groupId}/maven</url>
+
+			<!-- Commercial version: Cloudhub
 			<url>https://maven.anypoint.mulesoft.com/api/v3/organizations/${project.groupId}/maven</url>
+			-->
 
 			<!-- MuleSoft EU Cloud
 			<url>https://maven.eu1.anypoint.mulesoft.com/api/v3/organizations/${project.groupId}/maven</url>
