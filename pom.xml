@@ -4,7 +4,7 @@
 
 	<groupId>176302a0-a94d-44e9-a517-9e6dc9548d0d</groupId>
 	<artifactId>common-pom</artifactId>
-	<version>1.0.5</version> 
+	<version>1.0.6</version> 
 	<packaging>pom</packaging>
 
 	<!-- For documentation in Anypoint Exchange-->
@@ -99,8 +99,8 @@
 			https://maven.anypoint.mulesoft.com/api/v3/maven/com/mulesoft/connectors/mule-salesforce-connector/maven-metadata.xml
 			https://maven.anypoint.mulesoft.com/api/v3/maven/com/mulesoft/connectors/mule-sfdc-analytics-connector/maven-metadata.xml
 		 -->
-		<mule-salesforce-connector.version>10.19.0</mule-salesforce-connector.version>
-		<mule-sfdc-analytics-connector.version>3.14.0</mule-sfdc-analytics-connector.version>
+		<mule-salesforce-connector.version>10.18.5</mule-salesforce-connector.version>
+		<mule-sfdc-analytics-connector.version>3.13.1</mule-sfdc-analytics-connector.version>
 
 		<!-- Optional dependencies -->
 		<mule-email-connector.version>1.7.2</mule-email-connector.version>
