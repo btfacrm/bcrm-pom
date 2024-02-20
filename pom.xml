@@ -4,7 +4,7 @@
 
 	<groupId>176302a0-a94d-44e9-a517-9e6dc9548d0d</groupId>
 	<artifactId>common-pom</artifactId>
-	<version>1.0.9</version> 
+	<version>1.0.10</version> 
 	<packaging>pom</packaging>
 
 	<!-- For documentation in Anypoint Exchange-->
@@ -29,7 +29,9 @@
 		<tags>POM, Common</tags>
 
 		<!-- https://docs.mulesoft.com/release-notes/mule-runtime/mule-4.4.0-release-notes -->
-		<app.runtime>4.4.0-20231110</app.runtime>
+		<!-- https://docs.mulesoft.com/release-notes/mule-runtime/mule-4.5.0-release-notes -->
+		<!-- https://docs.mulesoft.com/release-notes/mule-runtime/mule-4.6.0-release-notes -->
+		<app.runtime>4.4.0-20240215</app.runtime>
 
 		<!-- Code coverage settings -->
 		<codecoverage.flow>20</codecoverage.flow>
@@ -37,19 +39,19 @@
 		<codecoverage.application>80</codecoverage.application>
 
 		<!-- Plugins -->
-		<mule-maven-plugin.version>3.8.7</mule-maven-plugin.version>
+		<mule-maven-plugin.version>4.1.1</mule-maven-plugin.version>
 		<maven-enforcer-plugin.version>3.4.1</maven-enforcer-plugin.version>
 		<maven-site-plugin.version>4.0.0-M11</maven-site-plugin.version>
 		<maven-project-info-reports-plugin.version>3.4.5</maven-project-info-reports-plugin.version>
-		<versions-maven-plugin.version>2.16.1</versions-maven-plugin.version>
+		<versions-maven-plugin.version>2.16.2</versions-maven-plugin.version>
 		<maven-resources-plugin.version>3.3.1</maven-resources-plugin.version>
 		<maven-clean-plugin.version>3.3.1</maven-clean-plugin.version>
 		<exchange-mule-maven-plugin.version>0.0.23</exchange-mule-maven-plugin.version>
 
 		<!-- Basic connectors and plugins-->
 		<!-- new version 1.8.0 but with warnings -->
-		<mule-http-connector.version>1.7.3</mule-http-connector.version>
-		<mule-apikit-module.version>1.9.1</mule-apikit-module.version>
+		<mule-http-connector.version>1.9.0</mule-http-connector.version>
+		<mule-apikit-module.version>1.10.0</mule-apikit-module.version>
 		<mule-tracing-module.version>1.0.0</mule-tracing-module.version>
 		<munit-maven-plugin.version>2.3.18</munit-maven-plugin.version>
 		<munit-tools.version>2.3.18</munit-tools.version>
@@ -203,7 +205,8 @@
 							<rules>
 								<requireProfileIdsExist />
 								<requireMavenVersion>
-									<version>[3.8,3.9)</version>
+									<!--<version>[3.8,3.9)</version>-->
+									<version>3.9</version>
 								</requireMavenVersion>
 							</rules>
 						</configuration>
