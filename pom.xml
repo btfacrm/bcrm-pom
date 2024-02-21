@@ -207,7 +207,10 @@
 								<requireProfileIdsExist />
 								<requireMavenVersion>
 									<!--<version>[3.8,3.9)</version>-->
-									<version>3.9</version>
+
+									<!--ver 3.8.6 is only for exchange deployment while the -->
+									<!--plugin is updated to maven 3.9 -->
+									<version>[3.8,3.9]</version>
 								</requireMavenVersion>
 							</rules>
 						</configuration>
