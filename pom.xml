@@ -3,12 +3,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>176302a0-a94d-44e9-a517-9e6dc9548d0d</groupId>
-	<artifactId>common-pom</artifactId>
-	<version>1.0.17</version> 
+	<artifactId>bcrm-pom</artifactId>
+	<version>1.0.1</version> 
 	<packaging>pom</packaging>
 
 	<!-- For documentation in Anypoint Exchange-->
-	<name>common-pom</name>
+	<name>bcrm-pom</name>
 	<description>Parent POM for Mulesoft applications</description>
 
 	<properties>
@@ -27,7 +27,7 @@
 		GovCloud Notes:
 		https://docs.mulesoft.com/release-notes/gov-cloud/gov-cloud-release-note
 		 -->
-		<app.runtime>4.6.1</app.runtime>
+		<app.runtime>4.6.3</app.runtime>
 
 		<!-- Code coverage settings -->
 		<codecoverage.flow>20</codecoverage.flow>
@@ -37,22 +37,23 @@
 		<!-- Plugins -->
 		<munit-maven-plugin.version>3.1.0</munit-maven-plugin.version>
 		<maven-project-info-reports-plugin.version>3.5.0</maven-project-info-reports-plugin.version>
-		<maven-site-plugin.version>4.0.0-M13</maven-site-plugin.version>
+		<maven-site-plugin.version>4.0.0-M14</maven-site-plugin.version>
 		<maven-enforcer-plugin.version>3.4.1</maven-enforcer-plugin.version>
 		<maven-resources-plugin.version>3.3.1</maven-resources-plugin.version>
 		<maven-clean-plugin.version>3.3.2</maven-clean-plugin.version>
 		<exchange-mule-maven-plugin.version>0.0.23</exchange-mule-maven-plugin.version>
 		<versions-maven-plugin.version>2.16.2</versions-maven-plugin.version>
-		<mule-maven-plugin.version>4.1.1</mule-maven-plugin.version>
+		<mule-maven-plugin.version>4.1.2</mule-maven-plugin.version>
 
 		<!-- Basic connectors and plugins-->
-		<mule-http-connector.version>1.9.2</mule-http-connector.version>
+		<mule-http-connector.version>1.9.3</mule-http-connector.version>
 		<mule-apikit-module.version>1.10.4</mule-apikit-module.version>
 		<mule-tracing-module.version>1.1.0</mule-tracing-module.version>
 		<munit-tools.version>3.1.0</munit-tools.version>
 		<munit-runner.version>3.1.0</munit-runner.version>
 		<mule-validation-module.version>2.0.6</mule-validation-module.version>
 		<assertions.version>1.3.0</assertions.version>
+		<anypoint-mq-connector.version>4.0.7</anypoint-mq-connector.version>
 
 		<!--Mule Metrics Toolkit Application connectors-->
 		<error.handler.plugin.version>5.1.0</error.handler.plugin.version>
@@ -64,12 +65,12 @@
 		<mule-file-connector.version>1.5.2</mule-file-connector.version>
 
 		<!-- Spring dependencies -->
-		<mule-spring-module.version>1.3.11</mule-spring-module.version>
-		<spring-core.version>5.3.33</spring-core.version>
+		<mule-spring-module.version>1.4.0</mule-spring-module.version>
+		<spring-core.version>5.3.36</spring-core.version>
 		<spring-security.version>5.7.12</spring-security.version>
 
 		<!-- Logging dependencies -->
-		<slf4j-api.version>2.0.12</slf4j-api.version>
+		<slf4j-api.version>2.0.13</slf4j-api.version>
 		<log4j-core.version>2.23.1</log4j-core.version>
 		<logzio-log4j2-appender.version>1.0.19</logzio-log4j2-appender.version>
 		<logzio-sender.version>1.1.8</logzio-sender.version>
@@ -78,11 +79,11 @@
 		<!-- Database dependencies, Base connectors -->
 		<commons-dbcp2.version>2.12.0</commons-dbcp2.version>
 		<derby.version>10.14.3.0</derby.version>
-		<mule-db-connector.version>1.14.9</mule-db-connector.version>
+		<mule-db-connector.version>1.14.10</mule-db-connector.version>
 
 		<!-- Database dependencies, Microsoft SQL Server -->
-		<mssql-jdbc_auth.version>12.6.1.x64</mssql-jdbc_auth.version>
-		<mssql-jdbc.version>12.6.1.jre8</mssql-jdbc.version>
+		<mssql-jdbc_auth.version>12.6.2.x64</mssql-jdbc_auth.version>
+		<mssql-jdbc.version>12.6.2.jre8</mssql-jdbc.version>
 
 		<!-- Database dependencies, Snowflake
 			GovCloud:
@@ -104,13 +105,13 @@
 			https://maven.anypoint.mulesoft.com/api/v3/maven/com/mulesoft/connectors/mule-sfdc-analytics-connector/maven-metadata.xml
 		-->
 		<mule-salesforce-connector.version>10.20.0</mule-salesforce-connector.version>
-		<mule-sfdc-analytics-connector.version>3.15.0</mule-sfdc-analytics-connector.version>
+		<mule-sfdc-analytics-connector.version>3.16.0</mule-sfdc-analytics-connector.version>
 
 		<!-- Optional dependencies -->
 		<mule-email-connector.version>1.7.3</mule-email-connector.version>
 		<mule-scripting-module.version>2.1.0</mule-scripting-module.version>
 		<mule-ftp-connector.version>1.8.8</mule-ftp-connector.version>
-		<mule-sftp-connector.version>2.0.7</mule-sftp-connector.version>
+		<mule-sftp-connector.version>2.1.0</mule-sftp-connector.version>
 
 		<!-- Next property is used when deploying the parent pom file to Anypoint Exchange -->
 		<type>custom</type>
@@ -433,6 +434,14 @@
 	<dependencyManagement>
 		<dependencies>
 
+			<!-- Anypoint MQ -->
+			<dependency>
+				<groupId>com.mulesoft.connectors</groupId>
+				<artifactId>anypoint-mq-connector</artifactId>
+				<classifier>mule-plugin</classifier>
+				<version>${anypoint-mq-connector.version}</version>
+			</dependency>
+			
 			<!-- Scripting module -->
 			<dependency>
 				<groupId>org.mule.modules</groupId>
