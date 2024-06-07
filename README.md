@@ -60,8 +60,6 @@ Update the runtime in the next section of the pom file, example:
 		<app.runtime>4.6.3</app.runtime>
 ```
 
-Release Notes for 4.5.0 (not yet implemented in this asset) https://docs.mulesoft.com/release-notes/mule-runtime/mule-4.5.0-release-notes
-
 <br>
 
 ## List of plugins and dependencies
