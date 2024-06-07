@@ -35,7 +35,7 @@
 		<codecoverage.application>80</codecoverage.application>
 
 		<!-- Plugins -->
-		<munit-maven-plugin.version>3.1.0</munit-maven-plugin.version>
+		<munit-maven-plugin.version>3.2.0</munit-maven-plugin.version>
 		<maven-project-info-reports-plugin.version>3.5.0</maven-project-info-reports-plugin.version>
 		<maven-site-plugin.version>4.0.0-M15</maven-site-plugin.version>
 		<maven-enforcer-plugin.version>3.5.0</maven-enforcer-plugin.version>
@@ -49,8 +49,8 @@
 		<mule-http-connector.version>1.9.3</mule-http-connector.version>
 		<mule-apikit-module.version>1.10.4</mule-apikit-module.version>
 		<mule-tracing-module.version>1.1.0</mule-tracing-module.version>
-		<munit-tools.version>3.1.2</munit-tools.version>
-		<munit-runner.version>3.1.2</munit-runner.version>
+		<munit-tools.version>3.2.0</munit-tools.version>
+		<munit-runner.version>3.2.0</munit-runner.version>
 		<mule-validation-module.version>2.0.6</mule-validation-module.version>
 		<assertions.version>1.3.0</assertions.version>
 		<anypoint-mq-connector.version>4.0.7</anypoint-mq-connector.version>
@@ -285,6 +285,26 @@
 					<ignoredVersions>.*-alpha.*,.*-beta*.*,.*jre11,.*-rc.*</ignoredVersions>
 					<ruleSet>
 						<rules>
+
+							<!-- Assertions -->
+							<rule>
+								<groupId>org.mule.weave</groupId>
+								<ignoreVersions>
+									<ignoreVersion>
+										<type>regex</type>
+										<version>^1.4.0-rc1*</version>
+									</ignoreVersion>
+									<ignoreVersion>
+										<type>regex</type>
+										<version>^2.7.0-20240430*</version>
+									</ignoreVersion>
+									<ignoreVersion>
+										<type>regex</type>
+										<version>^2.7.0-SNAPSHOT*</version>
+									</ignoreVersion>									
+								</ignoreVersions>
+								<comparisonMethod>maven</comparisonMethod>
+							</rule>
 
 							<!-- Apache Derby: The latest version compatible with jdk8 is 10.14.* -->
 							<rule>
