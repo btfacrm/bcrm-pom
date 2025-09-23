@@ -65,9 +65,9 @@
 		<mule-file-connector.version>1.5.2</mule-file-connector.version>
 
 		<!-- Spring dependencies -->
-		<mule-spring-module.version>1.4.0</mule-spring-module.version>
+		<!--<mule-spring-module.version>1.4.0</mule-spring-module.version>
 		<spring-core.version>5.3.36</spring-core.version>
-		<spring-security.version>5.7.12</spring-security.version>
+		<spring-security.version>5.7.12</spring-security.version>-->
 
 		<!-- Logging dependencies -->
 		<slf4j-api.version>2.0.13</slf4j-api.version>
