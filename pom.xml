@@ -640,7 +640,7 @@
 			</dependency>
 
 			<!-- Spring Framework -->
-			<dependency>
+			<!-- <dependency>
 				<groupId>org.mule.modules</groupId>
 				<artifactId>mule-spring-module</artifactId>
 				<version>${mule-spring-module.version}</version>
@@ -680,7 +680,7 @@
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-jdbc</artifactId>
 				<version>${spring-core.version}</version>
-			</dependency>
+			</dependency> -->
 		</dependencies>
 	</dependencyManagement>
 
