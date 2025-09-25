@@ -145,6 +145,7 @@
 						<nonFilteredFileExtension>jks</nonFilteredFileExtension>
 						<nonFilteredFileExtension>cer</nonFilteredFileExtension>
 						<nonFilteredFileExtension>crt</nonFilteredFileExtension>
+						<nonFilteredFileExtension>bcfks</nonFilteredFileExtension>
 						<nonFilteredFileExtension>p12</nonFilteredFileExtension>
 						<nonFilteredFileExtension>pem</nonFilteredFileExtension>
 						<nonFilteredFileExtension>pfx</nonFilteredFileExtension>
