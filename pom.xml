@@ -333,7 +333,7 @@
 
 							<!-- Spring Framework. For Mule Runtime 4.4 must be in the 5.3.x version
 							     and Security on Spring Core 5.7.x  -->
-							<rule>
+							<!--<rule>
 								<groupId>org.springframework</groupId>
 								<ignoreVersions>
 									<ignoreVersion>
@@ -360,7 +360,7 @@
 									</ignoreVersion>
 								</ignoreVersions>
 								<comparisonMethod>maven</comparisonMethod>
-							</rule>
+							</rule> -->
 
 							<!-- Log4j. Ignore beta releases -->
 							<rule>
